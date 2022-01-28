@@ -12,7 +12,7 @@ if __name__=="__main__":
     env_clear()
 
     # 执行case
-    cmd = 'pytest  ./testcases --clean-alluredir  --alluredir=results'
+    cmd = 'pytest testcases --alluredir results'
     os.system(cmd)
-    cmd = 'allure generate results -o ./reports --clean'
+    cmd = 'allure generate results -o reports --clean'
     os.system(cmd)
