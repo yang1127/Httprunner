@@ -4,3 +4,12 @@ __pycache__/*
 *.pyc
 .python-version
 logs/*
+*.idea/
+venv/
+.gitignore
+*__pycache__/
+*.../__pycache__/
+*...__pycache__/
+python*
+...*
+venv/
