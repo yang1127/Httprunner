@@ -2,11 +2,12 @@
 # FROM: har\search.har
 # 参数化驱动
 
+'''
 import pytest
 from httprunner import HttpRunner, Config, Step, RunRequest, Parameters
 from config.ExcelUtiltest import ParseExcel
 
-'''
+
 class TestCaseSearch(HttpRunner):
     # 法一：列表 —— 直接指定参数列表（笛卡尔积）
     @pytest.mark.parametrize('parma', Parameters({"city": ["西安", "临潼"]}))
@@ -39,9 +40,7 @@ class TestCaseSearch(HttpRunner):
                 .assert_equal("status_code", 200)
         ),
     ]
-'''
 
-'''
 class TestCaseSearch(HttpRunner):
     # 法二：debugtalk.py 回调
     @pytest.mark.parametrize('parma', Parameters({"city": '${get_city()}'}))
@@ -109,8 +108,6 @@ class TestCaseSearch(HttpRunner):
                 .assert_equal("status_code", 200)
         ),
     ]
-'''
-
 
 class TestCaseSearch(HttpRunner):
     # 法三：xlsx文件
@@ -151,5 +148,5 @@ class TestCaseSearch(HttpRunner):
 
 if __name__ == '__main__':
     TestCaseSearch().test_start()
-
+'''
 
