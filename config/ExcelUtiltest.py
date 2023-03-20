@@ -1,5 +1,5 @@
 # 封装excel的方法
-
+'''
 import openpyxl
 from openpyxl import load_workbook
 
@@ -29,7 +29,6 @@ class ParseExcel:
             # print(Data_List)
         return Data_List  # [[],[]]
 
-    '''
     # 写入excel数据
     def op_toExcel(data, fileName):
         # 打开指定excel文件，openpyxl库储存数据到excel
@@ -46,21 +45,16 @@ class ParseExcel:
             # 每次写入一行
             worksheet.append(d)
         workbook.save(fileName)
-    '''
-'''
+
 # 数据用例 - 写入
 testdata = [
     {'id': 1, 'city': '西安'},
     {'id': 2, 'city': '临潼'}
 ]
-'''
 
-'''
 fileName = '/Users/yangzhiqi/HPtest/testdata/exceldata.xlsx'
 ParseExcel.op_toExcel(testdata, fileName)
-'''
 
-'''
 # 执行打印读取的excel内容
 if __name__ == '__main__':
     excelPath = '/Users/yangzhiqi/HPtest/testdata/exceldata.xlsx'
