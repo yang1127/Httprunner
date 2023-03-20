@@ -1,0 +1,149 @@
+2023-03-20 19:16:38.275 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 测试测试～, TestCase ID: 5f42e195-af20-4e09-a11f-9802c1219466
+2023-03-20 19:16:38.276 | INFO     | httprunner.runner:__run_step:292 - run step begin: yzq测试 >>>>>>
+2023-03-20 19:16:38.584 | DEBUG    | httprunner.client:request:186 - client IP: 127.0.0.1, Port: 57515
+2023-03-20 19:16:38.584 | DEBUG    | httprunner.client:request:194 - server IP: 127.0.0.1, Port: 9999
+2023-03-20 19:16:38.585 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api.vvhan.com/api/weather?city=%E8%A5%BF%E5%AE%89&type=week
+headers  : {
+    "User-Agent": "python-requests/2.27.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-a70728d8-dd82-4065-9f54-92f0e7610827-414571",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2023-03-20 19:16:38.586 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "CWAP-waf",
+    "Date": "Mon, 20 Mar 2023 11:16:37 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Set-Cookie": "wzws_sessionid=oGQYQJWBNTE0NjkwgDEyMy4xMTkuNzEuMTk5gjFhZDM5Zg==; Path=/; HttpOnly",
+    "Access-Control-Allow-Origin": "*",
+    "Strict-Transport-Security": "max-age=31536000",
+    "WZWS-RAY": "1129-1679339797.895-s8jhg",
+    "X-Powered-By": "wangzhan.qianxin.com",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "wzws_sessionid": "oGQYQJWBNTE0NjkwgDEyMy4xMTkuNzEuMTk5gjFhZDM5Zg=="
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "success": true,
+    "city": "西安市",
+    "data": [
+        {
+            "date": "2023-03-20",
+            "week": "星期一",
+            "type": "多云",
+            "high": "最高 15°C",
+            "low": "最低 5°C",
+            "fengxiang": "微风",
+            "fengli": "3级",
+            "night": {
+                "type": "阴",
+                "fengxiang": "微风",
+                "fengli": "3级"
+            }
+        },
+        {
+            "date": "2023-03-21",
+            "week": "星期二",
+            "type": "多云",
+            "high": "最高 21°C",
+            "low": "最低 7°C",
+            "fengxiang": "微风",
+            "fengli": "3级",
+            "night": {
+                "type": "阴",
+                "fengxiang": "微风",
+                "fengli": "3级"
+            }
+        },
+        {
+            "date": "2023-03-22",
+            "week": "星期三",
+            "type": "阴",
+            "high": "最高 18°C",
+            "low": "最低 10°C",
+            "fengxiang": "微风",
+            "fengli": "3级",
+            "night": {
+                "type": "小雨",
+                "fengxiang": "微风",
+                "fengli": "3级"
+            }
+        },
+        {
+            "date": "2023-03-23",
+            "week": "星期四",
+            "type": "中雨",
+            "high": "最高 17°C",
+            "low": "最低 7°C",
+            "fengxiang": "微风",
+            "fengli": "3级",
+            "night": {
+                "type": "小雨",
+                "fengxiang": "微风",
+                "fengli": "3级"
+            }
+        },
+        {
+            "date": "2023-03-24",
+            "week": "星期五",
+            "type": "阴",
+            "high": "最高 15°C",
+            "low": "最低 6°C",
+            "fengxiang": "微风",
+            "fengli": "3级",
+            "night": {
+                "type": "阴",
+                "fengxiang": "微风",
+                "fengli": "3级"
+            }
+        },
+        {
+            "date": "2023-03-25",
+            "week": "星期六",
+            "type": "阴",
+            "high": "最高 15°C",
+            "low": "最低 7°C",
+            "fengxiang": "微风",
+            "fengli": "3级",
+            "night": {
+                "type": "阴",
+                "fengxiang": "微风",
+                "fengli": "3级"
+            }
+        },
+        {
+            "date": "2023-03-26",
+            "week": "星期日",
+            "type": "阴",
+            "high": "最高 13°C",
+            "low": "最低 7°C",
+            "fengxiang": "微风",
+            "fengli": "3级",
+            "night": {
+                "type": "阴",
+                "fengxiang": "微风",
+                "fengli": "3级"
+            }
+        }
+    ]
+}
+
+2023-03-20 19:16:38.587 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 307.67 ms, response_length: 0 bytes
+2023-03-20 19:16:38.587 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2023-03-20 19:16:38.587 | INFO     | httprunner.runner:__run_step:304 - run step end: yzq测试 <<<<<<
+
+2023-03-20 19:16:38.588 | INFO     | httprunner.runner:test_start:460 - generate testcase log: /Users/yangzhiqi/HPtest/logs/5f42e195-af20-4e09-a11f-9802c1219466.run.log

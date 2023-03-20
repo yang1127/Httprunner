@@ -5,10 +5,10 @@ import urllib
 from urllib.parse import quote
 import hashlib, base64, hmac
 
-
-sec = "SECd7b434a6d0e2d5c018a440f96e376e9c"
-web_hook = "https://yach-oapi.zhiyinlou.com/robot/send?access_token=S2xiL242V1E2T1ltdkh6cGxTeDFhOHpidlpCOG9SREpzWktydExSTE1TYnIzbHUrTUdLSHQ4cWZHVWdzUHBNLw"
+sec = "SEC0f79b8ea1e65cd996a233124448a2637"
+web_hook = "https://yach-oapi.zhiyinlou.com/robot/send?access_token=SXlLcnBoblh0Zk9FM1ovMjhaeTZ2QWZMMk5rV2phYTZyU05obk8vNVlLazFvSHRZN2RaTlRVZHdBUW5IN21PdQ"
 path_file = 'outputs/error.log'
+
 
 class Message:
     def __init__(self, secret=sec, webhook=web_hook, path=path_file):
@@ -55,7 +55,7 @@ class Message:
                     "msgtype": "markdown",
                     "markdown": {
                         "title": "接口自动化测试报警",
-                        "text": "# 接口自动化测试报警\n ### %s\n  [点击查看报告详情](%s)" %(error_text, single_url)
+                        "text": "# 接口自动化测试报警\n ### %s\n  [点击查看报告详情](%s)" % (error_text, single_url)
                     },
                     "at": {'atWorkCodes': recv_list, 'isAtAll': False}
                 }
