@@ -160,7 +160,7 @@ class TestCaseSearch(HttpRunner):
     ]
 '''
 
-if __name__ == '__main__':
-    TestCaseSearch().test_start()
-'''
-
+# if __name__ == '__main__':
+#     TestCaseSearch().test_start()
+#
+#

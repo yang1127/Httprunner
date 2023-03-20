@@ -49,7 +49,7 @@ class Message:
                 error_text = "本次执行共失败 " + str(count) + " 条\n" + "".join(lines)
                 print(error_text)
                 # 消息主体
-                url = quote('http://jenkins-qa.xesv5.com/job/InterfaceAuto/allure/')
+                url = quote('http://localhost:8080/job/test-Hp/42/allure/')
                 single_url = "yach://yach.zhiyinlou.com/session/webview?url=%s" % url
                 data = {
                     "msgtype": "markdown",
