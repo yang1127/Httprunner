@@ -1,0 +1,251 @@
+2023-07-25 15:15:10.932 | INFO | run step begin: /third/membership/restful/v1/getUserMembershipList >>>>>>
+2023-07-25 15:15:10.935 | DEBUG | ====== request details ======
+url: https://app.yinxiang.com/third/membership/restful/v1/getUserMembershipList
+method: POST
+params: {}
+data: ''
+cookies: {
+    "_ga": "GA1.2.2145025416.1679151775",
+    "req_sec": "\"U=1881e6e:P=/:E=1898beb42d9:S=c09c3bc3e361879acfa06333ebfc936\"",
+    "web50017PreUserGuid": "5620b7c1-55fc-44d5-9b4a-822896d38195"
+}
+timeout: 120
+allow_redirects: True
+verify: False
+headers: {
+    "Host": "app.yinxiang.com",
+    "user-agent": "%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/471886 CFNetwork/1335.0.3.1 Darwin/21.6.0",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "*/*",
+    "Connection": "keep-alive",
+    "auth": "S=s31:U=1881e6e:E=1d0622adeee:C=186f53f2690:P=1dd:A=yx-osx-xauth-new:V=3:H=ac98dac2125178d70c2c97b75062b459",
+    "content-length": "0",
+    "accept-language": "zh-CN,zh-Hans;q=0.9",
+    "HRUN-Request-ID": "HRUN-861e76eb-10f7-423d-bf60-7250bb91541d-310934",
+    "Cookie": "_ga=GA1.2.2145025416.1679151775; req_sec=\"U=1881e6e:P=/:E=1898beb42d9:S=c09c3bc3e361879acfa06333ebfc936\"; web50017PreUserGuid=5620b7c1-55fc-44d5-9b4a-822896d38195"
+}
+json: None
+
+2023-07-25 15:15:11.632 | DEBUG | client IP: 127.0.0.1, Port: 53946
+2023-07-25 15:15:11.633 | DEBUG | server IP: 127.0.0.1, Port: 8888
+2023-07-25 15:15:11.634 | DEBUG | 
+================== request details ==================
+method   : POST
+url      : https://app.yinxiang.com/third/membership/restful/v1/getUserMembershipList
+headers  : {
+    "user-agent": "%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/471886 CFNetwork/1335.0.3.1 Darwin/21.6.0",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "*/*",
+    "Connection": "keep-alive",
+    "Host": "app.yinxiang.com",
+    "auth": "S=s31:U=1881e6e:E=1d0622adeee:C=186f53f2690:P=1dd:A=yx-osx-xauth-new:V=3:H=ac98dac2125178d70c2c97b75062b459",
+    "content-length": "0",
+    "accept-language": "zh-CN,zh-Hans;q=0.9",
+    "HRUN-Request-ID": "HRUN-861e76eb-10f7-423d-bf60-7250bb91541d-310934",
+    "Cookie": "_ga=GA1.2.2145025416.1679151775; req_sec=\"U=1881e6e:P=/:E=1898beb42d9:S=c09c3bc3e361879acfa06333ebfc936\"; web50017PreUserGuid=5620b7c1-55fc-44d5-9b4a-822896d38195"
+}
+cookies  : {
+    "_ga": "GA1.2.2145025416.1679151775",
+    "req_sec": "\"U=1881e6e:P=/:E=1898beb42d9:S=c09c3bc3e361879acfa06333ebfc936\"",
+    "web50017PreUserGuid": "5620b7c1-55fc-44d5-9b4a-822896d38195"
+}
+body     : None
+
+2023-07-25 15:15:11.636 | DEBUG | 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jul 2023 07:15:11 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "1553",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "44",
+    "grpc-status": "0",
+    "server": "envoy",
+    "X-App-Server": "app-lb-2.prod1.bj.yxops.net/msvc-membership/msvc-membership",
+    "Connection": "keep-alive"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": 200,
+    "message": "success",
+    "data": {
+        "memberships": [
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "MATERIAL_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "AI_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "VERSE_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "TIME_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": 0,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "CHART_NOTE_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "MEMO_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "COLLECTOR_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            }
+        ]
+    }
+}
+
+2023-07-25 15:15:11.637 | INFO | status_code: 200, response_time(ms): 694.77 ms, response_length: 0 bytes
+2023-07-25 15:15:11.637 | DEBUG | ====== response details ======
+status_code: 200
+headers: {
+    "Date": "Tue, 25 Jul 2023 07:15:11 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "1553",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "44",
+    "grpc-status": "0",
+    "server": "envoy",
+    "X-App-Server": "app-lb-2.prod1.bj.yxops.net/msvc-membership/msvc-membership",
+    "Connection": "keep-alive"
+}
+body: {
+    "code": 200,
+    "message": "success",
+    "data": {
+        "memberships": [
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "MATERIAL_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "AI_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "VERSE_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "TIME_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": 0,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "CHART_NOTE_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "MEMO_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "COLLECTOR_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            }
+        ]
+    }
+}
+
+2023-07-25 15:15:11.638 | INFO | assert status_code equal 200(int)	==> pass
+2023-07-25 15:15:11.639 | INFO | assert headers."Content-Type" equal application/json(str)	==> pass
+2023-07-25 15:15:11.639 | INFO | assert body.code equal 200(int)	==> pass
+2023-07-25 15:15:11.639 | INFO | assert body.message equal success(str)	==> pass
+2023-07-25 15:15:11.639 | INFO | run step end: /third/membership/restful/v1/getUserMembershipList <<<<<<
+
+2023-07-25 15:15:11.639 | INFO | generate testcase log: /Users/tal/PycharmProjects/Httprunner/logs/861e76eb-10f7-423d-bf60-7250bb91541d.run.log

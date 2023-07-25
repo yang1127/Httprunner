@@ -1,0 +1,92 @@
+====== response details ======
+status_code: 200
+headers: {
+    "Date": "Tue, 25 Jul 2023 07:15:11 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "1553",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "44",
+    "grpc-status": "0",
+    "server": "envoy",
+    "X-App-Server": "app-lb-2.prod1.bj.yxops.net/msvc-membership/msvc-membership",
+    "Connection": "keep-alive"
+}
+body: {
+    "code": 200,
+    "message": "success",
+    "data": {
+        "memberships": [
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "MATERIAL_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "AI_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "VERSE_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "TIME_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": 0,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "CHART_NOTE_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "MEMO_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            },
+            {
+                "serviceLevel": "BASIC",
+                "membershipType": "COLLECTOR_VIP",
+                "npd": "0",
+                "resetting": false,
+                "autorenewStatus": 0,
+                "paymentMode": -1,
+                "purchaseType": -1,
+                "orderNumber": ""
+            }
+        ]
+    }
+}

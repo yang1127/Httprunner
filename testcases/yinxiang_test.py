@@ -2,8 +2,7 @@
 # FROM: har/yinxiang.har
 
 
-from httprunner import HttpRunner, Config, Step, RunRequest
-
+from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 
 class TestCaseYinxiang(HttpRunner):
@@ -18,24 +17,29 @@ class TestCaseYinxiang(HttpRunner):
             )
             .with_headers(
                 **{
-                    "accept": "*/*",
-                    "auth": "S=s31:U=1881e6e:E=1d0622adeee:C=186f53f2690:P=1dd:A=yx-osx-xauth-new:V=3:H=ac98dac2125178d70c2c97b75062b459",
-                    "accept-encoding": "gzip, deflate, br",
+                    "Host": "app.yinxiang.com",
                     "user-agent": "%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/471886 CFNetwork/1335.0.3.1 Darwin/21.6.0",
+                    "accept-encoding": "gzip, deflate, br",
+                    "accept": "*/*",
+                    "Connection": "keep-alive",
+                    "auth": "S=s31:U=1881e6e:E=1d0622adeee:C=186f53f2690:P=1dd:A=yx-osx-xauth-new:V=3:H=ac98dac2125178d70c2c97b75062b459",
                     "content-length": "0",
                     "accept-language": "zh-CN,zh-Hans;q=0.9",
+                    "HRUN-Request-ID": "HRUN-769126fb-0aa8-4ff5-bca7-cf063f0f6fd0-159289",
+                    "Cookie": '_ga=GA1.2.2145025416.1679151775; req_sec="U=1881e6e:P=/:E=1898beb42d9:S=c09c3bc3e361879acfa06333ebfc936"; web50017PreUserGuid=5620b7c1-55fc-44d5-9b4a-822896d38195',
                 }
             )
             .with_cookies(
                 **{
-                    "req_sec": '"U=1881e6e:P=/:E=18986c994c0:S=2e7c6337ad838405044225790d81e2cd"',
                     "_ga": "GA1.2.2145025416.1679151775",
+                    "req_sec": '"U=1881e6e:P=/:E=1898beb42d9:S=c09c3bc3e361879acfa06333ebfc936"',
                     "web50017PreUserGuid": "5620b7c1-55fc-44d5-9b4a-822896d38195",
                 }
             )
             .with_data("")
             .validate()
             .assert_equal("status_code", 200)
+            .assert_equal('headers."Content-Type"', "application/json")
             .assert_equal("body.code", 200)
             .assert_equal("body.message", "success")
         ),
