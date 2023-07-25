@@ -8,10 +8,6 @@ from httprunner import HttpRunner, Config, Step, RunRequest, Parameters
 # from config.ExcelUtiltest import ParseExcel
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dc4c80bfeaba81c841e5ed218b3f0b62192a7112
 class TestCaseSearch(HttpRunner):
     # 法一：列表 —— 直接指定参数列表（笛卡尔积）
     @pytest.mark.parametrize('parma', Parameters({"city": ["西安", "临潼"]}))
@@ -44,10 +40,7 @@ class TestCaseSearch(HttpRunner):
                 .assert_equal("status_code", 200)
         ),
     ]
-<<<<<<< HEAD
 
-=======
->>>>>>> dc4c80bfeaba81c841e5ed218b3f0b62192a7112
 
 class TestCaseSearch(HttpRunner):
     # 法二：debugtalk.py 回调
@@ -116,13 +109,9 @@ class TestCaseSearch(HttpRunner):
                 .assert_equal("status_code", 200)
         ),
     ]
-<<<<<<< HEAD
 '''
 
 '''
-=======
-
->>>>>>> dc4c80bfeaba81c841e5ed218b3f0b62192a7112
 class TestCaseSearch(HttpRunner):
     # 法三：xlsx文件
     data = ParseExcel('/Users/yangzhiqi/HPtest/testdata/exceldata.xlsx', 'Sheet1')
